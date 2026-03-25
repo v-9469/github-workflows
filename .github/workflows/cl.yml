@@ -1,10 +1,15 @@
-name: CI Pipeline              # Workflow name (shows in GitHub UI)
+name: CI Pipeline Demo            # Workflow name (shows in GitHub UI)
 
 on: [push, pull_request]      # When to run this workflow
 
 jobs:                          # Define jobs
-  build:                       # Job ID
-    runs-on: ubuntu-latest     # Which runner to use
-    steps:                     # Steps to execute
-      - name: Checkout code    # Step name
-        uses: actions/checkout@v4  # Use an action
+   job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Job 1"
+  
+      
+   job2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Job 2
