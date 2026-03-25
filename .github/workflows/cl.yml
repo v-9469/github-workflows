@@ -12,4 +12,4 @@ jobs:                          # Define jobs
    job2:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Job 2
+      - run: echo "Job 2"
