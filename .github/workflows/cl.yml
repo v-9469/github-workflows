@@ -20,7 +20,7 @@ jobs:                          # Define jobs
     steps:
       - run: echo "run1"
       - run: echo "run2"
-      - run :echo "run3"
+      - run: echo "run3"
   
    deploy:
     needs: [build, test]  # Wait for both build and test
