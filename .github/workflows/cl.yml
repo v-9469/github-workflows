@@ -13,6 +13,14 @@ jobs:                          # Define jobs
     runs-on: ubuntu-latest
     steps:
       - run: echo "Testing..."
+
+   parrallel-test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "run1"
+      - run: echo "run2"
+      - run :echo "run3"
   
    deploy:
     needs: [build, test]  # Wait for both build and test
